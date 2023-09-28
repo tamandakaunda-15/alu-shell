@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script displays directory content with names after the first dash
+for file in *; do
+    if [ -f "$file" ]; then
+        if [[ "$file" == *-* ]]; then
+            name="${file#*-}" # Remove everything before the first dash
+            echo "$name"
+        else
+            echo "$file"
+        fi
+    fi
+done
+
