@@ -1,4 +1,4 @@
- #!/usr/bin/env bash
+#!/usr/bin/env bash
 # This script displays numbers and associated messages for specific iterations
 count=1
 while [ $count -le 20 ]; do
