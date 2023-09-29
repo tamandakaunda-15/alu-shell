@@ -12,8 +12,8 @@ do
   while [ $minute -le 59 ]
   do
     echo "$minute"
-    (( minute+1 ))
+    (( minute++ ))
   done
-  (( hour+1 ))
+  (( hour++ ))
 done
 
