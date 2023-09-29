@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays information about users from /etc/passwd.
+
+# Set the Internal Field Separator (IFS) to ':'
+IFS=":"
+
+# Read /etc/passwd line by line
+while read -r username password uid gid user_info home shell; do
+  echo "The user $username is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $user_info"
+done < /etc/passwd
+ awk '{print $1,$9}' apache-access.log | sort -V | uniq -c | sort -n | perl -e 'print reverse <>'
+
