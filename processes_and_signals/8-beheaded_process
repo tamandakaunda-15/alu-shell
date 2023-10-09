@@ -2,4 +2,4 @@
 #a Bash script that kills the process 7-highlander
 PROGRAM="7-highlander"
 PID="$(ps -ef | awk -v file="$PROGRAM" '$NF ~file {print $2}'| tail -n 1)"
-kill -SIGKILL "$PID
+kill -SIGKILL "$PID"
