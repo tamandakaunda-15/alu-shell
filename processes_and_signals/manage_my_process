@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Bash (init) script 11-manage_my_process that manages manage_my_process. (both files need to be pushed to git)
+while true;
+do
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
+done
